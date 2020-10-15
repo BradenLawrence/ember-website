@@ -20,10 +20,16 @@ module.exports = {
   },
   globals: {
     // leaflet maps global
-    L: 1
+    L: 'readonly'
   },
   rules: {
-    'ember/no-jquery': 'error'
+    'ember/no-assignment-of-untracked-properties-used-in-tracking-contexts': 'off',
+    'ember/no-get': 'off',
+    'ember/no-get-with-default': 'off',
+    'ember/no-jquery': 'error',
+    'ember/require-computed-property-dependencies': 'off',
+    'no-prototype-builtins': 'off',
+    'ember/use-ember-data-rfc-395-imports': 'off'
   },
   overrides: [
     // node files
